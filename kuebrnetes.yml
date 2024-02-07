@@ -51,6 +51,7 @@ spec:
         persistentVolumeClaim:
           claimName: palworld
       - name: settings
+        configMap:
           name: palworld-settings
 ---
 apiVersion: v1
