@@ -44,5 +44,5 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ghcr.io/docheio/containerdisk-debian:12
+        tags: ghcr.io/seyukun/palworld:0.0.1
         labels: ${{ steps.meta.outputs.labels }}
