@@ -61,7 +61,7 @@ spec:
     spec:
       containers:
       - name: palworld
-        image: ghcr.io/seyukun/palworld:0.0.1
+        image: ghcr.io/seyukun/palworld:0.0.2
         ports:
         - protocol: UDP
           containerPort: 8211
