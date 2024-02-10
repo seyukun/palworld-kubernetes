@@ -2,12 +2,10 @@ FROM cm2network/steamcmd:latest
 
 RUN mkdir -p /home/steam/Steam/steamapps/common/PalServer
 
-USER root
-RUN chmod +x /home/steam/Steam/steamapps/common/PalServer/entrypoint.sh
 USER steam
 
 EXPOSE 8211/udp
 
 WORKDIR /home/steam/Steam/steamapps/common/PalServer
 
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["bash", "./entrypoint.sh"]
