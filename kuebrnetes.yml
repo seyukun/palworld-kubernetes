@@ -42,7 +42,7 @@ spec:
           containerPort: 8211
         volumeMounts:
         - name: saved
-          mountPath: /home/steam/Steam/steamapps/common/PalServer/Saved
+          mountPath: /home/steam/Steam/steamapps/common/PalServer
         - name: saved
           mountPath: /home/steam/Steam/steamapps/common/PalServer/PalWorldSettings.ini
           subPath: PalWorldSettings.ini
