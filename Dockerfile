@@ -8,4 +8,4 @@ EXPOSE 8211/udp
 
 WORKDIR /home/steam/Steam/steamapps/common/PalServer
 
-ENTRYPOINT ["bash", "./entrypoint.sh"]
+ENTRYPOINT bash -c "cat ./entrypoint.sh | bash -"
